@@ -20,5 +20,8 @@ namespace Bunker.Core.Services.Session.Base
 
         //[ShowInInspector, ReadOnly]
         //public SerializedVersion AppVersion = new();
+
+        [ShowInInspector, ReadOnly]
+        public Version AppVersion = new();
     }
 }
