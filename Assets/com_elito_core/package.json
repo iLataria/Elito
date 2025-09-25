@@ -8,10 +8,7 @@
   "documentationUrl": "",
   "changelogUrl": "",
 	"dependencies": {
-		"com.cysharp.unitask": "2.1.0",
-		"com.svermeulen.extenject": "9.2.1",
-		"com.cysharp.r3": "1.3.0",
-		"com.github-glitchenzo.nugetforunity": "4.5.0"
+
 	},
 
   "author": {
