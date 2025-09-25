@@ -1,0 +1,20 @@
+﻿#if UNITY_ANDROID || UNITY_EDITOR
+using UnityEditor;
+
+namespace NutakuUnitySdk
+{
+    /// <summary>
+	/// Unity Editor extension of Nutaku Unity SDK.
+    /// </summary>
+    public static class SdkTools
+    {
+        /// <summary>
+		/// Delete the Nutaku Android SDK login information saved on the PC when running in Unity Editor
+        /// </summary>
+        static void DeleteLoginInfo()
+        {
+            NutakuCurrentUser.ClearUserData();
+        }
+    }
+}
+#endif
