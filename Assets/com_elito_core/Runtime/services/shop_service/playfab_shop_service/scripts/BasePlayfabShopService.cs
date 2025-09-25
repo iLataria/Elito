@@ -2,7 +2,6 @@
 using Bunker.Core.Services.SPlayFab.Extensions;
 using Cysharp.Threading.Tasks;
 using Newtonsoft.Json;
-using ONiGames.Utilities;
 using PlayFab.ClientModels;
 using System;
 using System.Collections.Generic;
@@ -312,11 +311,11 @@ namespace Bunker.Core.Services.Shop.Playfab.Base
 
             var itemContent = new Dictionary<string, uint>();
 
-            if (currenciesContent.Count > 0)
-                itemContent.AddRange(currenciesContent);
+            //if (currenciesContent.Count > 0)
+            //    itemContent.AddRange(currenciesContent);
 
-            if (content.Count > 0)
-                itemContent.AddRange(content.GroupBy(o => o).ToDictionary(oo => oo.Key, oo => Convert.ToUInt32(oo.Count())));
+            //if (content.Count > 0)
+            //    itemContent.AddRange(content.GroupBy(o => o).ToDictionary(oo => oo.Key, oo => Convert.ToUInt32(oo.Count())));
 
             _content = itemContent;
         }

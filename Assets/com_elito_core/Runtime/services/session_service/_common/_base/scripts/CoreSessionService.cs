@@ -1,9 +1,8 @@
 ﻿using Bunker.Core.Services.Base;
-using Cysharp.Threading.Tasks;
-using ONiGames.Utilities.CoreTypes;
+
 using Sirenix.OdinInspector;
 using System;
-using System.Collections.Generic;
+
 using UnityEngine;
 
 namespace Bunker.Core.Services.Session.Base
@@ -19,7 +18,7 @@ namespace Bunker.Core.Services.Session.Base
             public int unitPrice = 0;
         }
 
-        [ShowInInspector, ReadOnly]
-        public SerializedVersion AppVersion = new();
+        //[ShowInInspector, ReadOnly]
+        //public SerializedVersion AppVersion = new();
     }
 }

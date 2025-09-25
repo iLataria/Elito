@@ -1,10 +1,9 @@
-﻿using Bunker.Core.Services.Base;
-using Bunker.Core.Services.Save;
+﻿using Bunker.Core.Extensions;
+using Bunker.Core.Services.Base;
 using Bunker.Core.Services.Save.Base;
 using Bunker.Core.Services.Save.Configs;
 using Bunker.Core.Services.SPlayFab.Extensions;
 using Cysharp.Threading.Tasks;
-using ONiGames.Utilities.CoreTypes;
 using PlayFab.ClientModels;
 using System;
 using System.Collections.Generic;
@@ -44,10 +43,10 @@ namespace Core.Bunker.Services.Save.Base
                         switch (localUserDataRecord.Key)
                         {
                             case SaveSlotName.SaveSlot1:
-                                _savesMap.Map[SaveSlotName.SaveSlot1] = ONiGames.Utilities.Utils.DeserializeFromJson(data.Value, _savesMap.Map[SaveSlotName.SaveSlot1]);
+                                _savesMap.Map[SaveSlotName.SaveSlot1] = JsonExtentions.DeserializeFromJson(data.Value, _savesMap.Map[SaveSlotName.SaveSlot1]);
                                 break;
                             case SaveSlotName.SaveSlot2:
-                                _savesMap.Map[SaveSlotName.SaveSlot2] = ONiGames.Utilities.Utils.DeserializeFromJson(data.Value, _savesMap.Map[SaveSlotName.SaveSlot2]);
+                                _savesMap.Map[SaveSlotName.SaveSlot2] = JsonExtentions.DeserializeFromJson(data.Value, _savesMap.Map[SaveSlotName.SaveSlot2]);
                                 break;
                             case SaveSlotName.SaveSlot3:
                                 break;
@@ -60,7 +59,7 @@ namespace Core.Bunker.Services.Save.Base
                             default:
                                 break;
                         }
-                        Type resylt = ONiGames.Utilities.Utils.DeserializeFromJson(data.Value, localUserDataRecord.Value.GetType());
+                        Type resylt = JsonExtentions.DeserializeFromJson(data.Value, localUserDataRecord.Value.GetType());
                         
                     }
                 }

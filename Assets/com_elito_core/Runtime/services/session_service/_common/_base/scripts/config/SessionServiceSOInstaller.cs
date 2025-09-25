@@ -1,5 +1,4 @@
-﻿using ONiGames.Utilities.CoreTypes;
-using Sirenix.OdinInspector;
+﻿using Sirenix.OdinInspector;
 using System;
 using UnityEngine;
 using Zenject;
@@ -25,7 +24,7 @@ public class SessionServiceSOInstaller : ScriptableObjectInstaller<SessionServic
     [ReadOnly] public string PlayFabUserAvatarUrl;
     [ReadOnly] public string PlayFabSessionTicket;
 
-    [ReadOnly] public SerializedVersion AppVersion = new();
+    //[ReadOnly] public SerializedVersion AppVersion = new();
 
     public override void InstallBindings()
     {

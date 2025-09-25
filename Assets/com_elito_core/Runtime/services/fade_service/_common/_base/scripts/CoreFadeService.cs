@@ -7,6 +7,7 @@ using UnityEngine.UI;
 using Zenject;
 using DG.Tweening;
 using Cysharp.Threading.Tasks;
+
 using Bunker.Core.Services.Base;
 
 namespace Bunker.Core.Services.Fade.Base
@@ -35,8 +36,8 @@ namespace Bunker.Core.Services.Fade.Base
 
                 if (inOneFrame)
                     _fadeImg.color = Color.black;
-                else
-                    await _fadeImg.DOFade(1, .5f).SetEase(Ease.InOutSine).WithCancellation(ct);
+                //else
+                //   // await _fadeImg.DOFade(1, .5f).SetEase(Ease.InOutSine).WithCancellation(ct);
 
                 
             }
@@ -52,8 +53,8 @@ namespace Bunker.Core.Services.Fade.Base
             {
                 if (inOneFrame)
                     _fadeImg.color = Color.clear;
-                else
-                    await _fadeImg.DOFade(0, .5f).SetEase(Ease.InOutSine).WithCancellation(ct);
+                //else
+                //    await _fadeImg.DOFade(0, .5f).SetEase(Ease.InOutSine).WithCancellation(ct);
                 
                 _fadeImg.raycastTarget = false;
             }

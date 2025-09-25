@@ -1,0 +1,8 @@
+<dependencies>
+    <androidPackages>
+        <!-- analytics dependencies -->
+        <androidPackage spec="com.google.code.gson:gson:2.8.6"/>
+        <androidPackage spec="org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4" />
+        <androidPackage spec="androidx.core:core-ktx:1.6.0"/>
+    </androidPackages>
+</dependencies>
