@@ -8,7 +8,7 @@
   "documentationUrl": "",
   "changelogUrl": "",
 	"dependencies": {
-
+		"com.svermeulen.extenject": "9.2.0-stcf3"
 	},
 
   "author": {
