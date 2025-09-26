@@ -1,6 +1,6 @@
 {
   "name": "com.elito.core",
-  "version": "1.1.1",
+  "version": "1.2.1",
   "displayName": "Elito Core",
   "description": "Core services and tools",
   "unity": "2022.3",
@@ -9,7 +9,8 @@
   "changelogUrl": "",
 	"dependencies": {
 		"com.svermeulen.extenject": "9.2.0-stcf3",
-		"com.cysharp.unitask": "2.5.10"
+		"com.cysharp.unitask": "2.5.10",
+		"com.neuecc.unirx": "7.1.0"
 	},
 
   "author": {
